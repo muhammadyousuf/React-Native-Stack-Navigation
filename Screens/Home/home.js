@@ -3,6 +3,17 @@ import { Button, View, Text } from 'react-native';
 
 
 class Home extends React.Component {
+    static navigationOptions = {
+        title: 'Home',
+        headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            textAlign: 'center',
+            flexGrow:1,
+        },
+      };
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
