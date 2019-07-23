@@ -11,18 +11,15 @@ import {
   View,
   Text,
 } from 'react-native';
-
-
-const App = () => {
-  return (
-    <Fragment>
-      <View>
-        <Text>Muhammad</Text>
-      </View>
-    </Fragment>
-  );
-};
+import { createStackNavigator, createAppContainer } from "react-navigation";
+import Home from './Screens/Home/home';
+const App = createStackNavigator({
+  Home: {
+    screen: Home
+  }
+});
 
 
 
-export default App;
+
+export default createAppContainer(App);
