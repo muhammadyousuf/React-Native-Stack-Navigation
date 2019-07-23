@@ -17,7 +17,7 @@ const App = () => {
   return (
     <Fragment>
       <View>
-        <Text>Muhammad Yousuf</Text>
+        <Text>Muhammad</Text>
       </View>
     </Fragment>
   );
