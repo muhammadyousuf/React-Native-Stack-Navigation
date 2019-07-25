@@ -9,12 +9,16 @@
 import React, { Component } from 'react';
 
 import { createDrawerNavigator, createAppContainer } from "react-navigation";
-
+import StackNavigation from '../StackNavigation/StackNavigation';
 import Home from '../../Screens/Home/home';
+import ShowList from '../../Screens/ShowList/showList';
 
 const MyDrawerNavigation = createDrawerNavigator({
     Home: {
-        screen: Home
+        screen: StackNavigation
+      },
+      ShowList :{
+          screen:ShowList
       }
     },
       {

@@ -2,11 +2,12 @@ import React from 'react';
 import { Button, View, Text } from 'react-native';
 
 
-class Home extends React.Component {
-  
-    static navigationOptions = ({screenProps}) => ({
-      
-        title: 'Home',
+
+class Signup extends React.Component {
+    static navigationOptions = ({screenProps}) => {
+     
+        return{
+        title: 'Sign Up',
         headerLeft : (<Button onPress={()=>screenProps.openDraw()} title="open" color='red'  />
 ),
         headerStyle: {
@@ -17,20 +18,20 @@ class Home extends React.Component {
             textAlign: 'center',
             flexGrow:1,
         },
-    
-      });
+    } };
+     
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
+        <Text>Sign Up</Text>
         <Button
-          title="Go to Details"
-          onPress={() => this.props.navigation.navigate('Login')}
+          title="Go Back"
+          onPress={() => this.props.navigation.goBack()}
         />
       </View>
     );
   }
 }
 
-export default Home;
+export default Signup;
 
