@@ -1,15 +1,13 @@
 import React from 'react';
-import { Button, View, Text } from 'react-native';
+import { Button, View, Text, TouchableOpacity } from 'react-native';
 
 
 
 class Signup extends React.Component {
-    static navigationOptions = ({screenProps}) => {
+    static navigationOptions =  {
      
-        return{
         title: 'Sign Up',
-        headerLeft : (<Button onPress={()=>screenProps.openDraw()} title="open" color='red'  />
-),
+       
         headerStyle: {
             backgroundColor: '#f4de1e',
           },
@@ -18,16 +16,17 @@ class Signup extends React.Component {
             textAlign: 'center',
             flexGrow:1,
         },
-    } };
+    } 
      
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Sign Up</Text>
-        <Button
-          title="Go Back"
-          onPress={() => this.props.navigation.goBack()}
-        />
+       <TouchableOpacity  onPress={() => this.props.navigation.goBack()}
+   >
+       <Text>Sign Up</Text>
+       </TouchableOpacity>
+       
+      
       </View>
     );
   }
