@@ -6,7 +6,7 @@ class Home extends React.Component {
     static navigationOptions = {
         title: 'Home',
         headerStyle: {
-            backgroundColor: '#f4511e',
+            backgroundColor: '#f4de1e',
           },
           headerTintColor: '#fff',
           headerTitleStyle: {

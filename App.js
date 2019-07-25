@@ -6,17 +6,18 @@
  * @flow
  */
 
-import React, { Fragment } from 'react';
+import React, { Component } from 'react';
+import DrawerNavigation from './Navigation/DrawerNavigation/DrawerNavigation';
 
-import { createStackNavigator, createAppContainer } from "react-navigation";
-import Home from './Screens/Home/home';
-const App = createStackNavigator({
-  Home: {
-    screen: Home
+
+class App extends Component {
+  render(){
+    return(
+      <DrawerNavigation />
+    )
   }
-});
+}
 
 
 
-
-export default createAppContainer(App);
+export default App;
