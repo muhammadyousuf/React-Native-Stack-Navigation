@@ -7,7 +7,7 @@ class Signup extends React.Component {
     static navigationOptions =  {
      
         title: 'Sign Up',
-       
+        headerLeft: null,
         headerStyle: {
             backgroundColor: '#f4de1e',
           },
@@ -21,7 +21,7 @@ class Signup extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-       <TouchableOpacity  onPress={() => this.props.navigation.goBack()}
+       <TouchableOpacity  onPress={() => this.props.navigation.navigate('Login')}
    >
        <Text>Sign Up</Text>
        </TouchableOpacity>

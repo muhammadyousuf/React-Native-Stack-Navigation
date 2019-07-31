@@ -9,7 +9,7 @@ class Login extends React.Component {
 
 
         title: 'Login',
-
+        headerLeft: null,
         headerStyle: {
             backgroundColor: '#f4de1e',
         },
@@ -21,7 +21,6 @@ class Login extends React.Component {
     }
 
     render() {
-        console.log('this.props.navigation',this.props.navigation.navigate('Signup'))
         const { navigate } = this.props.navigation;
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>

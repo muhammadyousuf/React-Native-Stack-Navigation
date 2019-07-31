@@ -9,7 +9,7 @@
 import React, { Component } from 'react';
 
 import { createStackNavigator, createAppContainer, DrawerActions } from "react-navigation";
-
+import getSlideFromRightTransition from 'react-navigation-slide-from-right-transition';
 import Home from '../../Screens/Home/home';
 import Login from '../../Screens/Login/login';
 import Signup from '../../Screens/Signup/signup';
@@ -23,7 +23,9 @@ const MyStackNavigation = createStackNavigator({
     Signup: {
         screen: Signup
     } 
-},
+}, {
+    transitionConfig: getSlideFromRightTransition
+  },
     {
         initialRouteName: 'Home',
         defaultNavigationOptions: {
